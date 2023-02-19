@@ -2,7 +2,7 @@
     <groupId>com.songoda</groupId>
     <artifactId>UltimateClaims</artifactId>
     <modelVersion>4.0.0</modelVersion>
-    <version>1.10.2</version>
+    <version>Custom-1.10.3</version>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -73,6 +73,7 @@
                             <artifactSet>
                                 <includes>
                                     <include>com.songoda:SongodaCore</include>
+                                    <include>com.github.caputoortega:RevisedSongodaCore</include>
                                 </includes>
                             </artifactSet>
 
@@ -101,9 +102,15 @@
     </build>
 
     <repositories>
+
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+        </repository>
+
         <repository>
             <id>spigot-repo</id>
-            <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
+            <url>https://hub.spigotmc.org/nexus/content/repositories/public/</url>
         </repository>
 
         <repository>
@@ -112,21 +119,17 @@
         </repository>
 
         <repository>
-            <id>jitpack.io</id>
-            <url>https://jitpack.io</url>
-        </repository>
-
-        <repository>
             <id>dynmap-repo</id>
             <url>https://repo.mikeprimm.com/</url>
         </repository>
+
     </repositories>
 
     <dependencies>
         <dependency>
             <groupId>org.spigotmc</groupId>
             <artifactId>spigot-api</artifactId>
-            <version>1.18-R0.1-SNAPSHOT</version>
+            <version>1.19.3-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
 
@@ -138,9 +141,9 @@
         </dependency>
 
         <dependency>
-            <groupId>com.songoda</groupId>
-            <artifactId>SongodaCore</artifactId>
-            <version>2.6.18</version>
+            <groupId>com.github.caputoortega</groupId>
+            <artifactId>RevisedSongodaCore</artifactId>
+            <version>1.0-SONGODA_2.6.18</version>
             <scope>compile</scope>
         </dependency>
 

@@ -1,9 +1,9 @@
 name: UltimateClaims
 description: UltimateClaims
-version: maven-version-number
+version: Custom-1.10.3
 softdepend: [PlayerPoints, HolographicDisplays, Holograms, CMI, Vault, dynmap, ItemsAdder, Slimefun, ItemBridge]
 main: com.songoda.ultimateclaims.UltimateClaims
-author: songoda
+author: [songoda, bernardMC]
 api-version: 1.13
 loadbefore: [WorldGuard]
 commands:

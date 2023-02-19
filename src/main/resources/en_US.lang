@@ -33,7 +33,7 @@ command:
     noclaim: '&cYou need to be in a claim to do this.'
     noplayer: '&cThat player does not exist or is not online.'
     notinclaim: '&cThat player is not in your claim.'
-    claimed: '&cThis chunk is already claimed.'
+    claimed: '&cThis chunk is already claimed by &6%owner%&c.'
     notclaimed: '&cThis chunk isn''t claimed.'
     notyourclaim: '&cThis chunk is claimed by someone else.'
   invite:

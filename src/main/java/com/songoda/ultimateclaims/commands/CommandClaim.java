@@ -39,12 +39,14 @@ public class CommandClaim extends AbstractCommand {
             return ReturnType.FAILURE;
         }
 
-        if (plugin.getClaimManager().hasClaim(player.getLocation().getChunk())) {
-            plugin.getLocale().getMessage("command.general.claimed").sendPrefixedMessage(player);
+        Chunk chunk = player.getLocation().getChunk();
+        if (plugin.getClaimManager().hasClaim(chunk)) {
+            plugin.getLocale().getMessage("command.general.claimed")
+                    .processPlaceholder("owner", plugin.getClaimManager().getClaim(chunk).getOwner().getName())
+                    .sendPrefixedMessage(player);
             return ReturnType.FAILURE;
         }
 
-        Chunk chunk = player.getLocation().getChunk();
         Claim claim;
 
         // firstly, can we even claim this chunk?

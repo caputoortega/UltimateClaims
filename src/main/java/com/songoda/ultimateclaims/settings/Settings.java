@@ -15,6 +15,9 @@ public class Settings {
 
     static final Config config = UltimateClaims.getInstance().getCoreConfig();
 
+    public static final ConfigSetting CHAT_MESSAGES_ONLY = new ConfigSetting(config, "Main.Chat Messages Only", true,
+    "Whether or not to display plugin messages as a hotbar title when possible");
+
     public static final ConfigSetting POWERCELL_RECIPE = new ConfigSetting(config, "Main.PowerCell Recipe",
             Collections.emptyList(),
             "The recipe players will need to place into a chest",
